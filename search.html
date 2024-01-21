@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Search</title>
+  <style>
+    /* Add some basic styles to make the search page visually appealing */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Search</h1>
+  <div class="container">
+    <form action="search.php" method="GET">
+      <input type="text" name="search" placeholder="Search by name">
+      <input type="submit" value="Search">
+    </form>
+
+    <?php
+    // Check if a search query is submitted
+    if (isset($_GET['search'])) {
+        // Sanitize the search query
+        $search = htmlspecialchars($_GET['search']);
+
+        // Create a connection to the MySQL database
+        $servername = "localhost:3307";  // Replace with your database server name
+        $username = "root";  // Replace with your database username
+        $password = "";  // Replace with your database password
+        $dbname = "user";  // Replace with your database name
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Check if the connection is successful
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // Prepare and execute the SQL statement to search for users by name
+        $sql = "SELECT * FROM user WHERE name LIKE '%$search%'";
+        $result = $conn->query($sql);
+
+        // Display the search results in a table
+        if ($result->num_rows > 0) {
+            echo "<table>";
+            echo "<tr><th>Name</th><th>description</th><th>dob</th><th>gender</th></tr>";
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row['name'] . "</td>";
+                echo "<td>" . $row['description'] . "</td>";
+                echo "<td>" . $row['dob'] . "</td>";
+                echo "<td>" . $row['gender'] . "</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "No results found.";
+        }
+
+        // Close the database connection
+        $conn->close();
+    }
+    ?>
+  </div>
+</body>
+</html>

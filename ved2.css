@@ -1,0 +1,435 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #hero .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #hero .btn:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  /* Services section styles */
+  #services {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  #services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #services li {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+  }
+  
+  #services h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #services p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Pricing section styles */
+  /* Pricing section styles (continued) */
+text-align: center;
+}
+
+#pricing .plan {
+width: 300px;
+margin: 0 20px;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 1px 5px rgba(0,0,0,.1);
+display: inline-block;
+}
+
+#pricing .plan h3 {
+font-size: 1.5rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 20px;
+}
+
+#pricing .plan p {
+font-size: 1.2rem;
+color: #666;
+margin-bottom: 20px;
+}
+
+#pricing .plan .price {
+font-size: 2rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 20px;
+}
+
+#pricing .plan .btn {
+display: block;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+margin: 0 auto;
+}
+
+#pricing .plan .btn:hover {
+background-color: #fff;
+color: #333;
+border: 1px solid #333;
+}
+
+/* Testimonials section styles */
+#testimonials {
+background-color: #f8f8f8;
+padding: 50px 0;
+}
+
+#testimonials h2 {
+font-size: 2rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 30px;
+text-align: center;
+}
+
+#testimonials .testimonial {
+width: 600px;
+margin: 0 auto;
+text-align: center;
+}
+
+#testimonials .testimonial p {
+font-size: 1.2rem;
+color: #666;
+margin-bottom: 20px;
+}
+
+#testimonials .testimonial .author {
+font-size: 1.5rem;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+#testimonials .testimonial .company {
+font-size: 1.2rem;
+color: #666;
+margin-bottom: 20px;
+}
+
+/* Contact section styles */
+#contact {
+padding: 50px 0;
+background-color: #333;
+color: #fff;
+}
+
+#contact h2 {
+font-size: 2rem;
+font-weight: bold;
+color: #fff;
+margin-bottom: 30px;
+text-align: center;
+}
+
+#contact form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#contact label {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+}
+
+#contact input[type="submit"] {
+display: inline-block;
+background-color: #fff;
+color: #333;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+margin: 0 auto;
+border: 1px solid #333;
+}
+
+#contact input[type="submit"]:hover {
+background-color: #333;
+color: #fff;
+border: none;
+}
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+    
+    footer a:hover {
+    text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+    #header nav {
+    flex-direction: column;
+    }
+    
+    #header nav a {
+    margin-bottom: 10px;
+    }
+    
+    #hero .content {
+    text-align: center;
+    }
+    
+    #about .content {
+    text-align: center;
+    }
+    
+    #services .box {
+    width: 100%;
+    text-align: center;
+    }
+    
+    #pricing .plan {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    }
+    
+    #testimonials .testimonial {
+    width: 100%;
+    }
+    
+    #contact form {
+    width: 100%;
+    }
+    }
+    * Responsive styles */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+#hero {
+height: 100vh;
+background-position: center;
+}
+
+#hero .content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: left;
+}
+
+#about .content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row-reverse;
+}
+
+#about .content img {
+width: 40%;
+}
+
+#services {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#services .box {
+width: 30%;
+margin: 20px;
+text-align: center;
+}
+
+#pricing {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#pricing .plan {
+width: calc(33.33333% - 40px);
+margin: 20px;
+margin-bottom: 0;
+}
+
+#testimonials {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#testimonials .testimonial {
+width: 40%;
+margin-right: 20px;
+text-align: left;
+}
+
+#contact form {
+width: 50%;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+#hero .content {
+width: 50%;
+}
+
+#about .content {
+flex-direction: row;
+}
+
+#about .content img {
+width: 50%;
+margin-right: 20px;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#hero .content {
+width: 40%;
+}
+
+#services .box {
+width: calc(25% - 40px);
+}
+}
+  

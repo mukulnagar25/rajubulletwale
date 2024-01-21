@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #666;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #eee;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header nav {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Pricing Styles */
+  section.pricing {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+  }
+  
+  section.pricing h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer nav {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  footer nav a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking Page</title>
+    <link rel="stylesheet" type="text/css" href="ved6.css">
+  </head>
+  <body>
+    <header>
+      <h1>Book an Appointment</h1>
+    </header>
+    <div class="container">
+      <form id="booking-form " method="post" action="mail2.php">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service:</label>
+          <select id="service" name="service" required>
+            <option value="">--Select--</option>
+            <option value="Oil Change">Oil Change</option>
+            <option value="Tire Rotation">Tire Rotation</option>
+            <option value="Brake Service">Brake Service</option>
+            <option value="Air filter">Air Filter</option>
+            <option value="Engine Tune up">Engine Tune up</option>
+            <option value="Modification">Modification</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div id="confirmation"></div>
+    </div>
+    <script src="aman.js"></script>
+  </body>
+</html>

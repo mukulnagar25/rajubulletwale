@@ -1,0 +1,83 @@
+/* Services Page CSS */
+
+/* Page Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  header a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Services Section */
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .service {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 0.o.5em;
+    margin-bottom: 1em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: translateY(-0.5em);
+  }
+  
+  .service img {
+    width: 100%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  .service h3 {
+    text-align: center;
+    margin: 0.5em 0;
+  }
+  
+  .service p {
+    text-align: justify;
+    padding: 0 1em;
+  }
+  
+  
+  /* Page Footer */
+  footer {
+    background-color: #333;
+    padding: 1em;
+  }
+  
+  footer nav {
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+  
+  footer nav a:hover {
+    text-decoration: underline;
+  }
+  
